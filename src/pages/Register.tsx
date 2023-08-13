@@ -3,7 +3,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { Link } from "react-router-dom"
 
 const Register = () => {
-  type Inputs = {
+  type RegisterInputs = {
     name: string
     email: string
     password: string
@@ -13,9 +13,9 @@ const Register = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<Inputs>()
+  } = useForm<RegisterInputs>()
 
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+  const onSubmit: SubmitHandler<RegisterInputs> = async (data) => {
     const body = {
       name: data.name,
       email: data.email,
@@ -131,18 +131,10 @@ const Register = () => {
                     )}
                   </label>
                 </div>
-                <div className="flex items-start">
-                  <div className="flex items-center h-5">
-                    <input id="remember" aria-describedby="remember" name="remember" type="checkbox" className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-cyan-200 h-4 w-4 rounded" required />
-                  </div>
-                  <div className="text-sm ml-3">
-                    <label htmlFor="remember" className="font-medium text-gray-900">Remember me</label>
-                  </div>
-                  <Link to={'/forget-password'} className="text-sm text-teal-500 hover:underline ml-auto">Lost Password?</Link>
-                </div>
+                
                 <button type="submit" className="text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-base px-5 py-3 w-full sm:w-auto text-center">Register to your account</button>
                 <div className="text-sm font-medium text-gray-500">
-                  Not registered? <Link to={'/login'} className="text-teal-500 hover:underline">Create account</Link>
+                  Do you have an account? <Link to={'/login'} className="text-teal-500 hover:underline">Please login</Link>
                 </div>
               </form>
             </div>
