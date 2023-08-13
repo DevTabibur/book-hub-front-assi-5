@@ -20,8 +20,8 @@ const Banner = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                                 <button className='text-white bg-primary px-6 py-4 font-medium rounded shadow-lg hover:bg-white hover:text-primary hover:shadow transition'>GET STARTED</button>
                             </div>
-                            <div></div>
-                            <div></div>
+                            <div>11</div>
+                            <div>22</div>
                         </div>
 
 
