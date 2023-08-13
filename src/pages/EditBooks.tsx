@@ -1,10 +1,13 @@
 import RootLayout from "../components/Layout/RootLayout"
 
 const EditBooks = () => {
+
   return (
     <>
       <RootLayout>
-        <h1>This is EDIT BOOKS PAGE</h1></RootLayout></>
+        <h1 className="mb-8">TRYING TO CONNECT REDUX</h1>
+
+      </RootLayout></>
   )
 }
 
