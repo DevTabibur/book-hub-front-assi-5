@@ -8,6 +8,9 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import NotFound from "../pages/NotFound";
 import ForgetPassword from "../pages/ForgetPassword";
+import Books from "../pages/Books";
+import AddBooks from "../pages/AddBooks";
+import EditBooks from "../pages/EditBooks";
 
 const routes = createBrowserRouter([
     {
@@ -25,6 +28,10 @@ const routes = createBrowserRouter([
         element: <Home />
     },
     {
+        path: '/',
+        element: <Home />
+    },
+    {
         path: '/register',
         element: <Register />
     },
@@ -35,6 +42,18 @@ const routes = createBrowserRouter([
     {
         path: '/forget-password',
         element: <ForgetPassword />
+    },
+    {
+        path: '/all-books',
+        element: <Books />
+    },
+    {
+        path: '/add-books',
+        element: <AddBooks />
+    },
+    {
+        path: '/edit-books',
+        element: <EditBooks />
     },
     {
         path: '*',

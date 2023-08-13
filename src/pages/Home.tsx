@@ -1,16 +1,18 @@
 
-import Navbar from "../components/Layout/Navbar"
+import AllBooks from "../components/AllBooks"
 import RootLayout from "../components/Layout/RootLayout"
-
+import Banner from "../components/banner"
 
 const Home = () => {
 
 
   return (
     <>
+      <RootLayout>
+        <Banner />
+        <AllBooks />
+      </RootLayout>
 
-      <Navbar />
-      <h1>This is Home Page</h1>
     </>
   )
 }

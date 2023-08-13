@@ -116,7 +116,7 @@ const Login = () => {
                 </div>
                 <button type="submit" className="text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-base px-5 py-3 w-full sm:w-auto text-center">Login to your account</button>
                 <div className="text-sm font-medium text-gray-500">
-                  Not Registered? <Link to={'/login'} className="text-teal-500 hover:underline">Create account</Link>
+                  Not Registered? <Link to={'/register'} className="text-teal-500 hover:underline">Create account</Link>
                 </div>
               </form>
             </div>
