@@ -156,7 +156,7 @@ const RootLayout = ({ children }) => {
                         </ul>
                     </div>
                 </div>
-                <footer>
+                <footer className="">
                     <Footer />
                 </footer>
             </div>
